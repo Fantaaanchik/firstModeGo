@@ -5,16 +5,13 @@ import (
 	"log"
 )
 
-var (
-	numa        int16
-	firstNum    int16
-	secondNum   int16
-	thirdNum    int16
-	ResultOfNum bool
-)
-
-func Boolean20(bool) (ResultOfNum bool) {
-
+func Boolean20() {
+	var (
+		numa      int16
+		firstNum  int16
+		secondNum int16
+		thirdNum  int16
+	)
 	fmt.Printf("Boolean20\n Дано трехзначное число. Проверить истинность высказывания: " +
 		"«Все цифры данного числа различны»\n")
 	fmt.Printf("Введите трехзначное число: \n")
@@ -27,7 +24,9 @@ func Boolean20(bool) (ResultOfNum bool) {
 	secondNum = numa % 100 / 10
 	thirdNum = numa % 10
 
-	if firstNum != secondNum && secondNum != thirdNum && firstNum != thirdNum {
+	if firstNum == secondNum || secondNum == thirdNum || firstNum == thirdNum {
+		fmt.Println(false)
+	} else {
 		fmt.Println(true)
 	}
 

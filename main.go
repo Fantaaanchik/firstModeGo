@@ -1,5 +1,9 @@
 package main
 
+import (
+	"homeTasks/Boolean"
+)
+
 func main() {
 
 	//fmt.Println(Begin.Beginner12(Begin.ResC, Begin.ResP))
@@ -23,6 +27,5 @@ func main() {
 	//fmt.Println(Boolean.Boolean14(Boolean.ITrue))
 	//fmt.Println(Boolean.Boolean15(Boolean.TrueAns))
 	//fmt.Println(Boolean.Boolean16(Boolean.ResOfOperation))
-	//fmt.Println(Boolean.Boolean20(Boolean.ResultOfNum))
-
+	Boolean.Boolean20()
 }
